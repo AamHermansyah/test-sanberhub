@@ -39,7 +39,7 @@ function Form({ isSignUp }) {
       setFieldError((prev) => ({ ...prev, email: 'Email not valid' }));
       isValid = false;
     };
-    if (password.length < 3) {
+    if (password.length < 8) {
       setFieldError((prev) => ({ ...prev, password: 'Password is too short' }));
       isValid = false;
     }
