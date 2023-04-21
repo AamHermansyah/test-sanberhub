@@ -182,6 +182,14 @@ function Form({ isSignUp }) {
       >
         {isSignUp ? 'Sign Up' : 'Login'}
       </button>
+      {!isSignUp && (
+        <Link
+          to="/signup"
+          className="btn-already-signup mt-2"
+        >
+          Register
+        </Link>
+      )}
     </form>
   )
 }
