@@ -78,7 +78,10 @@ function Dashboard() {
 
       <ModalAddUser
         display={modalAddUserDisplay}
-        onCancelButtonClick={() => setModalAddUserDisplay(false)}
+        onCancelButtonClick={() => {
+          setDataEdit(null);
+          setModalAddUserDisplay(false);
+        }}
         onSuccessSubmit={() => {
           setModalAddUserDisplay(false);
           setLoading(true);

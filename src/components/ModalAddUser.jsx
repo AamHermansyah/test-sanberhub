@@ -13,8 +13,6 @@ const defaultFieldError = {
   born_date: ''
 }
 
-const regexBornDate = /^(19[7-9][0-9]|200[0-6])-(\d+)-(\d+)$/gi
-
 function ModalAddUser({
   display,
   onSuccessSubmit,
@@ -29,6 +27,7 @@ function ModalAddUser({
     const { name, address, born_date } = data;
 
     setFieldError(defaultFieldError);
+    const regexBornDate = /^(19[7-9][0-9]|200[0-6])-(\d+)-(\d+)$/gi;
 
     if (!name || name.length < 8 ) {
       setFieldError((prev) => ({
