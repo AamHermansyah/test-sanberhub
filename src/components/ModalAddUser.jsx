@@ -171,7 +171,7 @@ function ModalAddUser({
           )}
         </div>
 
-        <fieldset className="self-start">
+        <fieldset className="text-white self-start">
           <legend>Gender</legend>
 
           <div className="flex items-center gap-2">
