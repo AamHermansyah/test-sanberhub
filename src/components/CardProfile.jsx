@@ -68,7 +68,7 @@ function CardProfile({ data, notProfile }) {
       <m.p variants={childAnimate()} className="text-sm text-white">
         {data.address}
       </m.p>
-      <m.p variants={childAnimate()} className="text-sm mt-4">
+      <m.p variants={childAnimate()} className="text-sm text-white mt-4">
         {notProfile ? 'Created' : 'Joined'} {getRelativeTime(new Date(data.created_at))}
       </m.p>
     </m.div>
