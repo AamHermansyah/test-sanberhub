@@ -19,7 +19,7 @@ function Table({ headers, data, isLoading, onClickDeleteById, onEditClick }) {
           before-title={data?.length === 0 ? 'Data is empty' : 'Request is error'}
           className={`${data?.length === 0 ? 'table-body-empty' : ''} relative w-full`}
         >
-          {isLoading && (data?.length === 0 || data === null) && (
+          {(isLoading || (data?.length === 0 || data === null)) && (
             <tr>
               <th>0</th>
               {Array
